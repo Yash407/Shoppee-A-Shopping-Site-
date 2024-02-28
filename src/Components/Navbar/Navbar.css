@@ -1,0 +1,139 @@
+.navbar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    box-shadow: 0 1px 3px -2px black;
+    
+  }
+  
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nav-logo p {
+    color: #171717;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .nav-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: rgb(119, 0, 0);
+  }
+  
+  .nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .nav-login-cart button {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #7a7a7a;
+    font-size: 16px;
+    font-weight: 550;
+    background: white;
+    cursor: pointer;
+    color: #515151;
+  }
+  
+  .nav-login-cart button:active {
+    background: rgb(243, 241, 241);
+  }
+  .sidenavbar-icon{
+    display: none;
+  }
+  .menu-toggle a{
+    text-decoration: none;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 600;
+    
+  }
+.menu-toggle ul {
+  padding: 10px 20px ;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 120px; 
+  font-size: 22px;
+  background-color:white;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  overflow-y: auto; 
+  
+}
+.menu-toggle li{
+  margin-bottom: 5px;
+  list-style: none;
+}
+.menu-toggle a:hover {
+color: #b6a2a2; 
+}
+.menu-toggle {
+  display: inline-block;
+  cursor: pointer; 
+  font-size: 25px;
+}
+
+  
+/* Responsive Design */
+  
+ @media (max-width: 767px) {
+    .nav-menu,.nav-login-cart {
+      display: none;
+    }
+    .sidenavbar-icon{
+        display: inline-block;
+    }
+   }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .nav-menu li {
+      margin-right: 10px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .nav-menu li {
+      margin-right: 20px;
+    }
+  }
+  
